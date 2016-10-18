@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>提现申请</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/backstage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/withdrawals.css"/>
+		<script src="js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header id="zq_header"></header>
+		<div id="zq_nav_left"></div>
+		<div class="In_nav">
+				<div class="zq_mantel_nav">
+					<span class="zq_statements_get">金额管理</span><i>&nbsp; &gt; &nbsp;</i><span class="zq_withdrawals_get">提现申请</span>
+				</div>
+			<!--<a class="zq_back" href="javascript:;">返回</a>-->
+		</div>
+		<div class="zq_centent_statements">
+			<div class="zq_index_navtab">
+				<ul>
+					<li class="zq_moner_Getone"><span class="zq_manage_examine"></span>未结算
+					<div class="zq_moner_Getone_fase" id="notSettled" style="display: none;"></div>
+					</li>
+					<li class="zq_moner_Gettow"><span class="zq_manage_examine"></span>已结算</li>
+					<li class="zq_moner_Getshw zq_navtab_Get"><span class="zq_manage_hold"></span>提现申请
+					<div class="zq_moner_Getone_fase" id="tixian" style="display: none;"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="zq_statements_centent">
+				<div class="zq_choice clearfix">
+					<div class="zq_user_choice">
+						<span class="zq_choice_get"></span><span>全选</span><span class="zq_choice_fewer">已选择0人</span>
+					</div>
+					<div class="zq_user_button clearfix">
+						<a class="zq_mae_exportone zq_mae_export_alt" href="javascript:;" style="display: none;"><span class="zq_mae zq_mae_export"></span>导出</a>
+					</div>
+				</div>
+				<div class="zq_withdrawals">
+					<div class="zq_withdrawals_title">
+						
+						<!--ajax遍历下列代码-->
+						
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="zq_paging">
+				<!--分页插入此处-->
+				<span id="sp"></span>
+			</div>
+		</div>
+		<!--弹框-->
+		<div class="zq_shade" ></div>
+		<div class="zq_currentmanage_direct zq_withdrawals_alertA">
+			<span class="zq_alert_export">打款确认</span>
+			<div class="zq_alert_centent">
+				<span>请输入支付宝转账订单号</span>
+				<input type="text" id="zq_aliply_number" value="" placeholder="支付宝订单账号"/>
+			</div>
+			<div class="zq_alert_button" style="bottom: 14px;">
+				<a class="zq_manage_alertget zq_alertA_get" href="javascript:;">确定</a><a class="zq_alert_move" href="javascript:;">取消</a>
+			</div>
+		</div>
+		<div class="zq_currentmanage_direct zq_withdrawals_alertB">
+			<span class="zq_alert_export">打款详情</span>
+			<div class="zq_money_withdrawals_list">
+				
+			</div>
+			
+			<div class="zq_alert_button" style="bottom: 14px;">
+				<a class="zq_manage_alertget zq_alertB_get" href="javascript:;">确定</a><a class="zq_alert_move" href="javascript:;">取消</a>
+			</div>
+		</div>
+	</body>
+	<script src="js/withdrawals.js" type="text/javascript" charset="utf-8"></script>
+</html>

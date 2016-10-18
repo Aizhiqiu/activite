@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>财务审核结算</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/backstage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/financialaudit.css"/>
+		<script src="js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page_2016_03_24.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header id="zq_header"></header>
+		<div id="zq_nav_left"></div>
+		<div class="In_nav">
+				<div class="zq_mantel_nav">
+				</div>
+			<a class="zq_back" href="javascript:;">返回</a>
+		</div>
+		<div class="zq_centent_statements" id="zq_centent_statements">
+			<div class="Flt_title">
+				<!-- <span>2015心愿马拉松，和小红花一起为新年许愿吧！</span> -->
+				<h1></h1>
+				<div class="zq_button_flt" >
+					结算
+				</div>
+			</div>
+			<div class="Flt_content">
+				<div class="Flt_content_left">
+					<p class="Flt_headline">活动收益</p>
+					<div class="Flt_head">
+						<span class="Flt_one">序号</span>
+						<span class="Flt_two">姓名</span>
+						<span class="Flt_three">手机号</span>
+						<span class="Flt_four">票名</span>
+						<span class="Flt_five">票价（元） </span>
+						<span class="Flt_six">数量</span>
+						<span class="Flt_seven">支付类型</span>
+						<span class="Flt_eight">支付详情</span>
+					</div>
+					<div class="Flt_headline_con">
+						<!--遍历部分-->
+						<!-- <ul class="Flt_teble">
+							<li class="Flt_one">1</li>
+							<li class="Flt_two">张三</li>
+							<li class="Flt_three">18811776503</li>
+							<li class="Flt_four">Vip票</li>
+							<li class="Flt_five"><span>6526368</span>元</li>
+							<li class="Flt_six">1</li>
+							<li class="Flt_seven">全额</li>
+							<li class="Flt_eight">
+								<p>65382元   &nbsp; &nbsp;  微信支付</p>
+								<p>65382元   &nbsp; &nbsp;  微信支付</p>
+								<p>65382元   &nbsp; &nbsp;  微信支付</p>
+							</li>
+						</ul> -->
+						
+					</div>
+					<div class="zq_paging">
+					<!--分页插入此处-->
+						<span id="spTwo"></span>
+					</div>
+					<div class="Flt_fotter">
+						<!-- <p class="Flt_fotter_one">总计：<span>6589898</span>元</p>
+						<p class="Flt_fotter_two">线上：<span>78898</span>元</p>
+						<p class="Flt_fotter_three">线下：<span>7465565</span>元</p> -->
+					</div>
+				</div>
+				<div class="Flt_content_right">
+					<p class="Flt_headline_r">收益分配</p>
+					<div class="Flt_head_r">
+						<span class="Flt_r_one">序号</span>
+						<span class="Flt_r_two">姓名</span>
+						<span class="Flt_r_three">收益</span>
+						<span class="Flt_r_four">授课者</span>
+						<span class="Flt_r_five">组织者</span>
+						<span class="Flt_r_six">邀请者</span>
+					</div>
+					<div class="Flt_headline_con_r">
+						<!--授课者-->
+						<!-- <ul class="Flt_teble_r">
+							<li class="Flt_r_one">1</li>
+							<li class="Flt_r_two">张三</li>
+							<li class="Flt_r_three"><span>776503</span>元</li>
+							<li class="Flt_r_four"><span>776503</span>元</li>
+							<li class="Flt_r_five"><span>776503</span>元</li>
+							<li class="Flt_r_six"><span>776503</span>元</li>
+						</ul> -->
+					</div>
+					<div class="zq_paging">
+						<!--分页插入此处-->
+						<span id="sp"></span>
+					</div>
+					<div class="Flt_r_fotter">
+						<!-- <p class="Flt_fotter_r">平台收益：<span>6589898</span>元</p> -->
+						<!-- <p class="Flt_fotter_r">总计：<span>6589898</span>元</p> -->
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!--弹框-->
+		<div class="zq_shade"></div>
+		<div class="zq_currentmanage_direct">
+			<span class="zq_alert_export">结算确认</span>
+			<div class="zq_alert_centent">
+				<span>结算审核确认？</span>
+			</div>
+			<div class="zq_alert_button" style="bottom: 14px;">
+				<a class="zq_manage_alertget" href="javascript:;">确定</a><a class="zq_alert_move" href="javascript:;">取消</a>
+			</div>
+		</div>
+		
+		
+		
+	</body>
+	<script src="js/financialaudit.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	var widthThis=$(window).width();
+	var heightThis=$(window).height();
+		$("#zq_centent_statements").css({"width":(widthThis-180)+"px","height":heightThis-146+"px"});
+	</script>
+</html>

@@ -1,0 +1,189 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>活动详情</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/backstage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/activity.css"/>
+		<script src="js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--弹窗-->
+		
+		<div class="Ec_bg">
+			<div id="Ec_bg_inner"></div>
+			<div class="Ec_content">
+				<div class="Ec_header">审核 </div>
+				<div class="Ec_inner clearfix">
+					<p>审核不通过，请输入审核不通过的原因（3—60）</p>
+					<div class="Ec_text">
+						<textarea name="" rows="" cols=""  id="not_cross" class="zq_draft_centent"></textarea>
+					</div>
+				</div>
+				<p class="Act_prompt" style="text-align: center; height: 30px; line-height: 30px; color: red;" id="text_error"></p>
+				<div class="Ec_bg_btn" style="width: 228px;  height: 30px; margin: 5px auto 0px;">
+					<span class="Ec_add">确定</span>
+					<span class="Ec_cancel">取消</span>
+				</div>
+			</div>
+		</div>
+		<div class="zq_index_whole Act_con">
+			<header id="zq_header"></header>
+			<div id="zq_nav_left">	
+			</div>
+			<div class="zq_centent">
+				<div class="In_nav">
+					<span>活动管理</span>&nbsp; > &nbsp;<span class="zq_activity_Get">正在举行</span>
+					<a class="zq_back" href="javascript:;">返回</a>
+				</div>
+				<div class="In_content">
+					<div class="In_con_inner">
+						<div class="In_basic">
+							<h3>基本信息</h3>
+							<ul class="In_basic_inner">
+								<li>活动名称：&nbsp;<span id="activity_title"></span></li>
+								<li>活动开始时间：&nbsp;<span id="activity_starTime"></span>&nbsp;&nbsp;&nbsp;&nbsp;活动结束时间：<span id="activity_endTime"></span></li>
+								<li>报名截止时间：&nbsp;<span id="activity_lastTime">2016-03-03  14:00</span></li>
+								<li>活动地点：&nbsp;<span id="activity_addr"></span></li>
+								<li>主讲人：&nbsp;<span id="activity_promulgator"></span></li>
+								<li>组织者：&nbsp;<span id="activity_organizer"></span></li>
+							</ul>
+						</div>
+						<div class="In_basic">
+							<h3>活动海报</h3>
+							<div class="In_basic_img">
+								<img id="activity_img" src="" alt="" />
+							</div>
+						</div>
+						<div class="In_basic" style="margin-top: 70px;">
+							<h3>活动详情</h3>
+							<div class="In_basic_text">
+							<!-- 
+								<div class="In_basic_text_con">
+									互联网时代下，到处充满了机会和威胁。互联网创业公司需要融资和指导，投融界也需要好的互联网项目，实体经济面临转型升级等问题。此次高峰论坛主要讲述互联网时代下的进程，指导互联网创业公司在互联网时代下所面临的问题，给予了互联网创业公司一个展示的舞台，同时也提供了投资人和互联网初创公司交流的平台；此次大会还指导在互联网时代下实体经济所面临的转型升级等问题。本次大会主要讲述一个互联网时代下“未来的格局”，使我们互联网地相关人群有一个比较清晰地认识。
+								</div>
+								<img src="img/01-2.jpg" alt=""/>
+							 -->
+							</div>
+						</div>
+						<div class="In_basic">
+							<h3>报名信息</h3>
+							<ul class="In_basic_inner In_message" id="activity_in_message">
+								<!-- 
+									<li>姓名：&nbsp;<span>（必填）</span></li>
+									<li>电话：&nbsp;<span>（必填）</span></li>
+									<li>公司：&nbsp;<span>（必填）</span></li>
+								 -->
+							</ul>
+						</div>
+						<div class="In_basic">
+							<h3>活动票价</h3>
+							<div class="In_activityMoney clearfix" id="activity_Money">
+								<div class="In_money">
+									<span class="In_money_one">序号</span>
+									<span class="In_money_two">名称</span>
+									<span class="In_money_three">金额</span>
+									<span class="In_money_three">人数上限</span>
+									<span class="In_money_three">支付类型</span>
+									<span class="In_money_four">详情</span>
+								</div>
+								<!-- 
+									<ul>
+										<li class="In_money_one">1</li>
+										<li class="In_money_two">VIP票</li>
+										<li class="In_money_three"><span>1688</span>元</li>
+										<li class="In_money_three"><span>20</span>人</li>
+										<li class="In_money_three">全款</li>
+										<li class="In_money_four"></li>
+									</ul>
+									<ul>
+										<li class="In_money_one">2</li>
+										<li class="In_money_two">定金</li>
+										<li class="In_money_three"><span>1688</span>元</li>
+										<li class="In_money_three"><span>20</span>人</li>
+										<li class="In_money_three">全款</li>
+										<li class="In_money_now">
+											<span>
+												<p>第一期<span>10000</span>元</p>
+												<p>第二期<span>30000</span>元</p>
+												<p>第三期<span>30000</span>元</p>
+											</span>
+											
+										</li>
+									</ul>
+								 -->
+								
+								
+								
+							</div>
+
+						</div>
+						<div class="In_basic">
+							<h3>分配比例</h3>
+							<div class="In_allotratio clearfix">
+								<div class="In_allot">
+									<span class="In_allot_one">组织</span>
+									<span class="In_allot_two">授课</span>
+									<span class="In_allot_three">分享</span>
+								</div>
+								<ul>
+									<li class="In_allot_first" id="activity_organizerRatio"></li>
+									<li id="activity_lectureRatio"></li>
+									<li id="activity_shareRatio"></li>
+								</ul>
+							</div>
+
+						</div>
+						<div class="In_button" style="display: none;">
+							<span class="In_button_ok">通过</span>
+							<span class="In_button_no">不通过</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/activity.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//下列代码勿动
+		$("body").css({"height":$(window).height()+"px"});
+		$(".zq_centent").css({"height":($(window).height()-90)+"px","width":($(window).width()-187)+"px"})
+		$(".In_nav").css({"width":($(window).width()-187)+"px"})
+			ajax("header.html",function(str){
+				var sA=str.indexOf("body>")
+				var sB=str.indexOf("</body")
+			   var scr=str.substring((sA+5),sB)
+				$('#zq_header').html(scr);
+				headerget()
+			},function(scr){
+			
+			});
+			ajax("navleft.html",function(str){
+				var sA=str.indexOf("body>")
+				var sB=str.indexOf("</body")
+			    var scr=str.substring((sA+5),sB)
+				$('#zq_nav_left').html(scr);
+				var cruxVariable=webStorage();
+				var index=cruxVariable.getItem("index");
+				managementGet(index);
+				navleftget()
+			},function(scr){
+				
+			});
+
+	
+		//弹窗
+		window.onload=function(){
+			var H = document.documentElement.clientHeight;
+			var quanbei=document.getElementById("Ec_bg_inner");
+			quanbei.style.height=H+"px";
+			$(".In_button_no").click(function(){
+				$(".Ec_bg").css("display","block");
+			});
+			$(".Ec_cancel").click(function(){
+				$(".Ec_bg").css("display","none");
+			})
+		}
+	</script>
+</html>

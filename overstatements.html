@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>已结算</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/backstage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/oentstatements.css"/>
+		<script src="js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header id="zq_header"></header>
+		<div id="zq_nav_left"></div>
+		<div class="In_nav">
+				<div class="zq_mantel_nav">
+					<span class="zq_statements_get">金额管理</span><i>&nbsp; &gt; &nbsp;</i><span class="zq_overstatements_get">已结算</span>
+				</div>
+			<!--<a class="zq_back" href="javascript:;">返回</a>-->
+		</div>
+		<div class="zq_centent_statements">
+			<div class="zq_index_navtab">
+				<ul>
+					<li class="zq_moner_Getone"><span class="zq_manage_examine"></span>未结算
+					<div class="zq_moner_Getone_fase" id="notSettled" style="display: none;"></div></li>
+					<li class="zq_moner_Gettow zq_navtab_Get"><span class="zq_manage_examine"></span>已结算</li>
+					<li class="zq_moner_Getshw"><span class="zq_manage_hold"></span>提现申请
+					<div class="zq_moner_Getone_fase" id="tixian" style="display: none;"></div></li>
+				</ul>
+			</div>
+			<div class="zq_statements_centent">
+				<div class="zq_centent_iform">
+					<div class="zq_centent_title">
+						<span class="zq_title_page">序号</span>
+						<span class="zq_title_names">活动名称</span>
+						<span class="zq_title_list">报名名单</span>
+						<span class="zq_title_tatements">财务审核结算</span>
+					</div>
+					<!--便利插入数据时复制ul所有内容-->
+					<!-- <ul class="zq_centent_ul clearfix">
+						span内放置活动Id
+						<span style="display: none;"></span>
+						<li class="zq_title_page">1</li>
+						<li class="zq_title_names zq_title_namesGet" >2015心愿马拉松，和小红花一起为新年许愿吧！</li>
+						<li class="zq_title_list zq_title_listGet">查看</li>
+						<li class="zq_title_tatements zq_title_tatementsGet">审核结算详情</li>
+					</ul> -->
+					<div id="SettledList"></div>
+				</div>
+			</div>
+			<div class="zq_paging">
+				<!--分页插入此处-->
+				<span id="sp"></span>
+			</div>
+		</div>
+		
+		
+	</body>
+	<script src="js/overstatements.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>已结束</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/backstage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<div class="zq_index_whole">
+			<header id="zq_header"></header>
+			<div id="zq_nav_left">	
+			</div>
+			<div class="In_nav">
+				<span class="zq_navtab_isone">活动管理</span>&nbsp; > &nbsp;<span class="zq_navtab_isshw">已结束</span>	
+			</div>
+			<div class="zq_centent">
+				<div class="zq_index_navtab">
+					<ul>
+						<li class="zq_navtab_one zq_navtab_isone "><span class="zq_manage_examine"></span>活动审核
+						<div id="activity_index_count" style="display: none;"></div></li>
+						<li class="zq_navtab_one zq_navtab_istow"><span class="zq_manage_hold"></span>正在举行</li>
+						<li class="zq_navtab_one zq_navtab_isshw zq_navtab_Get"><span class="zq_manage_finish"></span>已结束</li>
+					</ul>
+				</div>
+				<div class="zq_manage_centent" style="min-height: 642px;">
+					<div class="zq_over_nav">
+						<span class="zq_manage_naice">序号</span><span class="zq_mannav_tetle">活动名称</span><span class="zq_mannav_time">报名名单</span><span class="zq_mannav_yes">活动是否结算</span>
+					</div>
+					<div id="load_message">
+						<!-- 
+						<ul class="zq_over_teble clearfix">
+							<span style="display: none;"></span>
+							<li class="zq_manage_movear">1</li>
+							<li class="zq_manage_title">2015心愿马拉松，和小红花一起为新年许愿吧！</li>
+							<li class="zq_manage_times">查看报名名单</li>
+							<li class="zq_mannav_yes">是的</li>
+						</ul>
+						 -->
+					</div>
+				</div>
+				<span id="sp"></span>
+			</div>
+		</div>
+	</body>
+	<script src="js/hadover.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//下列代码勿动
+		$(".zq_index_whole").css({"min-height":($("body").height())+"px","min-width":($(window).width()-187)+"px"})
+		$(".zq_centent").css({"min-height":($("body").height())+"px","width":($(window).width()-187)+"px"})
+		$(".In_nav").css({"width":($(window).width()-187)+"px"})
+		$(".zq_manage_centent").css({"width":($(".zq_centent").width()-104)+"px"})
+		$(".zq_index_navtab").css({"width":($(".zq_centent").width())+"px"})
+		ajax("header.html",function(str){
+			var sA=str.indexOf("body>")
+			var sB=str.indexOf("</body")
+		   	var scr=str.substring((sA+5),sB)
+			$('#zq_header').html(scr);
+			headerget()
+		},function(scr){
+			
+		});
+		ajax("navleft.html",function(str){
+			var sA=str.indexOf("body>")
+			var sB=str.indexOf("</body")
+		    var scr=str.substring((sA+5),sB)
+			$('#zq_nav_left').html(scr);
+			$(".zq_management_activity").addClass("zq_management_Get");
+			navleftget()
+		},function(scr){
+			
+		});
+		
+	</script>
+</html>

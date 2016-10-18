@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>头部</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/backstage.css"/>
+		<script src="js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+ 	</head>
+	<body>
+		<div class="zq_kosp">
+			<div class="zq_nav clearfix">
+				<div class="zq_logo clearfix" href="javascript:;">
+					<div class="zq_index_mode">
+						<a href="javascript:;" class="zq_logolmouse" title="企信智慧（北京）科技有限公司">企信智慧（北京）科技有限公司</a>
+						<div class="zq_logoltex">
+							<span >企信智慧(北京)科技有限公司</span><br />
+							<span class="zq_logoltex_href">www.eyouxin.net</span>
+						</div>
+					</div>
+					
+					<div class="zq_logoltle">
+						<span>企信智慧后台管理平台</span>
+					</div>
+					
+					
+				</div>
+				
+				<ul>
+			        <li class="In_name">admin</li>
+			        <li class="In_next" id="In_home"><span>退出</span></li>
+			    </ul>
+			</div>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(".zq_index_mode").click(function(){
+			window.location.href="index.html"
+		})
+		var cruxVariable=webStorage();
+		
+		var userId=cruxVariable.getItem("manage_user_id");
+		if(userId==null||userId=="null"||userId==""||userId==undefined||userId=="undefined"){
+			window.location.href="entry.html"
+		}
+		var nice=cruxVariable.getItem("magae_nice_name");
+		if(nice!==null&&nice!=="null"&&nice!==""&&nice!==undefined&&nice!=="undefined"){
+			$(".In_name").html(nice)
+		}
+		$(".In_next").click(function(){
+			cruxVariable.clear();
+			window.location.href="entry.html"
+		})
+	</script>
+</html>

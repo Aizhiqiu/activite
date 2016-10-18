@@ -1,0 +1,106 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>报名名单</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/backstage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+		<script src="js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<div class="zq_index_whole">
+			<header id="zq_header"></header>
+			<div id="zq_nav_left">	
+			</div>
+			<div class="In_nav">
+				<span>用户管理</span>&nbsp; > &nbsp;<span class="zq_list_get">报名名单</span>
+				<a class="zq_back" href="javascript:;">返回</a>
+			</div>
+			<div class="zq_centent">
+				<div class="zq_user_search clearfix">
+					<span class="zq_list_title"></span>
+					<div class="zq_user_button">
+						<a class="zq_mae_exportone zq_mae_export_alt" href="javascript:;"><span class="zq_mae zq_mae_export"></span>导出</a>
+					</div>
+				</div>
+				<div class="zq_manage_centent" style="height: 712px;">
+					<div class="zq_list_nav">
+						<ul class="clearfix">
+							<li class="zq_list_number">序号</li>
+							<li class="zq_list_name">姓名</li>
+							<li class="zq_list_names">票名</li>
+							<li class="zq_list_prices">票价</li>
+							<li class="zq_list_paytype">支付类型</li>
+							<li class="zq_list_paydepth">支付详情</li>
+						</ul>
+					</div>
+					<div class="relust"></div>
+					 
+						<!--<ul class="zq_list_teble clearfix">
+							<span style="display: none;"></span>
+							<li class="zq_list_number">1</li>
+							<li class="zq_list_name zq_list_nameone">夏知秋</li>
+							<li class="zq_list_names">VIP贵宾</li>
+							<li class="zq_list_prices">1200元</li>
+							<li class="zq_list_paytype">支付宝支付</li>
+							<li class="zq_list_paydepth">
+								<p>第一期&nbsp;：&nbsp;600元</p>
+								<p>第一期&nbsp;：&nbsp;600元</p>
+								<p>第一期&nbsp;：&nbsp;600元</p>
+							</li>
+						</ul>-->
+					 
+				</div>
+				<div class="zq_paging">
+				<span id="sp"></span>
+			</div>
+		</div>
+		<div class="zq_shade"></div>
+		<div class="zq_list_export">
+			<span class="zq_alert_export">导出报名名单</span>
+			<div class="zq_alert_centent">
+				<p>将活动所有名单导出为Excel格式，您可以使用Excel，WPS等工具打开并做进一步查询、统计和分析。</p>
+			</div>
+			<div class="zq_alert_button">
+				<a class="zq_export_get" href="javascript:;">导出</a><a class="zq_export_move" href="javascript:;">取消</a>
+			</div>
+		</div>
+	</body>
+	<script src="js/list.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//下列代码勿动
+		
+		$(".zq_shade").css({"width":($(window).width())+"px"})
+		$(".zq_index_whole").css({"min-height":($("body").height())+"px","min-width":($(window).width()-187)+"px"})
+		$(".zq_centent").css({"min-height":($("body").height())+"px","width":($(window).width()-187)+"px"})
+		$(".In_nav").css({"width":($(window).width()-187)+"px"})
+		$(".zq_manage_centent").css({"width":($(".zq_centent").width()-104)+"px"})
+		$(".zq_index_navtab").css({"width":($(".zq_centent").width())+"px"})	
+		ajax("header.html",function(str){
+			var sA=str.indexOf("body>")
+			var sB=str.indexOf("</body")
+		   	var scr=str.substring((sA+5),sB)
+			$('#zq_header').html(scr);
+			headerget()
+		},function(scr){
+			
+		});
+		ajax("navleft.html",function(str){
+			var sA=str.indexOf("body>")
+			var sB=str.indexOf("</body")
+		    var scr=str.substring((sA+5),sB)
+			$('#zq_nav_left').html(scr);
+			var cruxVariable=webStorage();
+			var index=cruxVariable.getItem("index");
+			managementGet(index);
+			navleftget()
+		},function(scr){
+			
+		});
+		
+		
+	</script>
+</html>

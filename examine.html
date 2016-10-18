@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>审核</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/backstage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/exmine.css"/>
+		<script src="js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		
+
+	</head>
+	<body>
+		<header id="zq_header"></header>
+		<div id="zq_nav_left"></div>
+		<div class="In_nav">
+				<div class="zq_mantel_nav">
+					<span class="zq_statements_get">金额管理</span><i>&nbsp; &gt; &nbsp;</i><span class="zq_withdrawals_get">提现申请</span>
+			&nbsp; &gt; &nbsp;<span class="zq_examine_get">审核</span>
+				</div>
+			<a class="zq_back" href="javascript:;">返回</a>
+		</div>
+		<div class="zq_centent_statements clearfix">
+			<div class="zq_centent_left">
+				<!-- ajax 拼数据 -->
+				
+				
+			</div>
+			<!--账户详情-->
+			<div class="zq_centent_right zq_manage_rightOne">
+				<div class="zq_list_manger">
+					<span class="zq_manger_title">账户详情</span>
+					<a class="zq_manger_move" href="javascript:;">取消</a>
+				</div>
+				<div class="zq_manger_table">
+					<div class="zq_tatl_manger">
+						<span class="zq_manger_one">序号</span>
+						<span class="zq_manger_toe">活动名称</span>
+						<span class="zq_manger_thw">角色</span>
+						<span class="zq_manger_four">金额</span>
+					</div>
+					<!--下列代码供ajax进行循环-->
+					<div class="reslut"></div>	
+				</div>
+				<div class="zq_paging">
+				<!--分页插入此处-->
+			     <span id="spTwo"></span>
+				</div>
+				
+			</div>	
+			<!--提现记录-->
+			<div class="zq_centent_right zq_manage_right">
+				<div class="zq_list_manger">
+					<span class="zq_manger_title">提现记录</span>
+					<a class="zq_manger_move" href="javascript:;">取消</a>
+				</div>
+				<div class="zq_manger_table">
+					<div class="zq_tatl_manger">
+						<span class="zq_manger_oneA">序号</span>
+						<span class="zq_manger_toeA">时间</span>
+						<span class="zq_manger_thwA">金额</span>
+						<span class="zq_manger_fourA">交易流水号</span>
+					</div>
+					<!--下列代码供ajax进行循环-->
+					<div class="reslut"></div>
+					
+				</div>
+				
+				<div class="zq_paging">
+				<!--分页插入此处-->
+				<span id="sp"></span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/examine.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/page_2016_03_24.js" type="text/javascript" charset="utf-8"></script>
+</html>

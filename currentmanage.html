@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>正在举行</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/backstage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<div class="zq_index_whole">
+			<header id="zq_header"></header>
+			<div id="zq_nav_left">	
+			</div>
+			<div class="In_nav">
+				<span class="zq_navtab_isone">活动管理</span>&nbsp; > &nbsp;<span class="zq_navtab_istow">正在举行</span>		
+			</div>
+			<div class="zq_centent">
+				<div class="zq_index_navtab">
+					<ul>
+						<li class="zq_navtab_one zq_navtab_isone "><span class="zq_manage_examine"></span>活动审核
+						<div id="activity_index_count"  style="display: none;"></div></li>
+						<li class="zq_navtab_one zq_navtab_istow zq_navtab_Get"><span class="zq_manage_hold"></span>正在举行</li>
+						<li class="zq_navtab_one zq_navtab_isshw"><span class="zq_manage_finish"></span>已结束</li>
+					</ul>
+				</div>
+				<div class="zq_manage_centent"  style="height: 682px;">
+					<div class="zq_manage_nav">
+						<span class="zq_manage_naice">序号</span><span class="zq_mannav_tetle">活动名称</span><span class="zq_mannav_time">报名名单</span><span class="zq_mannav_operate">操作处理</span>
+					</div>
+					<div id="load_message"></div>
+				</div>
+				<span id="sp"></span>
+			</div>
+		</div>
+		<div class="zq_shade"></div>
+		<div class="zq_currentmanage_direct">
+			<span class="zq_alert_export">提前下线</span>
+			<div class="zq_manage_alertcentent">
+				<span>确定提前下线，请输入提前下线的原因（3—60）</span><br />
+				<textarea placeholder="请填写提前下线的原因" id="online_centent" class="zq_direct_centent"></textarea>
+				<input type="hidden" id="line_activity_id"/>
+			</div>
+				<p class="Act_prompt" style="text-align: center; height: 30px; line-height: 30px; color: red;" id="text_error1"></p>
+			<div class="zq_alert_button" style="bottom: 14px;">
+				<a class="zq_manage_alertget" href="javascript:OfflineInfo();">确定</a><a class="zq_alert_move" href="javascript:;">取消</a>
+			</div>
+		</div>
+		<div class="zq_currentmanage_draft">
+			<span class="zq_alert_export">退回草稿箱</span>
+			<div class="zq_manage_alertcentent">
+				<span>确定退回草稿箱，请输入退回草稿箱的原因（3—60）</span><br />
+				<textarea placeholder="请输入退回草稿箱的原因"  id="draft_centent" class="zq_draft_centent"></textarea>
+				<input type="hidden" id="draft_activity_id"/>
+			</div>
+			<p class="Act_prompt" style="text-align: center; height: 30px; line-height: 30px; color: red;"  id="text_error2"></p>
+			<div class="zq_alert_button" style="bottom: 14px;">
+				<a class="zq_draft_alertget" href="javascript:infoDraft();">确定</a><a class="zq_draft_move" href="javascript:;">取消</a>
+			</div>
+		</div>
+	</body>
+	<script src="js/currentmanage.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//下列代码勿动
+		$(".zq_index_whole").css({"min-height":($("body").height())+"px","min-width":($(window).width()-187)+"px"})
+		$(".zq_centent").css({"min-height":($("body").height())+"px","width":($(window).width()-187)+"px"})
+		$(".In_nav").css({"width":($(window).width()-187)+"px"})	
+		$(".zq_shade").css({"width":($("body").width())+"px"})
+		ajax("header.html",function(str){
+			var sA=str.indexOf("body>")
+			var sB=str.indexOf("</body")
+		   var scr=str.substring((sA+5),sB)
+			$('#zq_header').html(scr);
+			headerget()
+		},function(scr){
+			
+		});
+		ajax("navleft.html",function(str){
+			var sA=str.indexOf("body>")
+			var sB=str.indexOf("</body")
+		    var scr=str.substring((sA+5),sB)
+			$('#zq_nav_left').html(scr);
+			$(".zq_management_activity").addClass("zq_management_Get");
+			navleftget()
+		},function(scr){
+			
+		});
+	</script>
+</html>

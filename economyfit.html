@@ -1,0 +1,147 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>系统设置</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/backstage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/economyfit.css"/>
+		<script src="js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<!--弹窗-->
+		<div class="Ec_bg">
+			<div id="Ec_bg_inner" style="height: 100%;"></div>
+			<div class="Ec_content">
+				<div class="Ec_header">添加管理员</div>
+				<div class="Ec_inner clearfix">
+					<div class="Ec_name Ec_global clearfix">
+						<span>姓&nbsp;&nbsp;名：&nbsp;</span>
+						<input type="text" placeholder="请输入姓名" class="Ec_fame"/>
+					</div>
+					<div class="Ec_username Ec_global clearfix">
+						<span>用户名：&nbsp;</span>
+						<input type="text" placeholder="请输入用户名" class="Ec_num"/>
+					</div>
+					<div class="Ec_password Ec_global clearfix">
+						<span>密&nbsp; &nbsp;码：&nbsp;</span>
+						<input type="password" placeholder="请输入密码" class="Ec_pwd"/>
+					</div>
+					<div class="zq_lobel_choi Ec_global">
+						<span>权&nbsp; &nbsp;限：&nbsp;</span>
+						<a href="javascript:;" style="margin-left:30px;"><span id="0" class=""></span> 普通管理员</a> <span class="zq_loble_resabl"></span><a href="javascript:;"><span id="2" class=""></span>财务管理员</a>	
+					</div>
+				</div>
+				<p id="span"></p>
+				<div class="Ec_bg_btn">
+					<span class="Ec_add">添加</span>
+					<span class="Ec_cancel">取消</span>
+				</div>
+			</div>
+		</div>
+		<!--弹窗-->
+		<div class="Ec_bgtwo">
+			<div id="Ec_bg_inner"></div>
+			<div class="Ec_content">
+				<div class="Ec_header">删除</div>
+				<div class="zq_list_remove">
+					<div class="zq_alert_centent">
+						<span>你确定删除用户?</span><br />
+						<span>(删除用户不可恢复)</span>
+					</div>
+					<div class="zq_alert_button">
+						<a class="zq_remove_get" href="javascript:;">确定</a><a class="zq_export_move" href="javascript:;">取消</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="zq_index_whole Mo_con">
+			<header id="zq_header"></header>
+			<div id="zq_nav_left">	
+			</div>
+			<div class="In_nav clearfix">
+				<span  class="zq_economyfit_isget">系统设置</span><i>&nbsp; > &nbsp;</i><span class="zq_economyfit_isget">添加管理员</span>
+				<!--<a href="javascript:;" class="In_back">返回</a>-->
+			</div>
+			<div class="zq_centent">
+				<div class="In_con_inner">
+					<div class="In_basic">
+					<h3>添加管理员</h3>
+					<div class="In_activityMoney clearfix">
+						<div class="In_money">
+							<span class="In_money_one">序号</span>
+							<span class="In_money_two">管理员（姓名）</span>
+							<span class="In_money_three">用户名</span>
+							<span class="In_money_four">登陆密码</span>
+							<span class="In_money_six">权限</span>
+							<span class="In_money_five">删除</span>
+						</div>
+						<ul class="ul">
+							<!-- 拼接数据 -->
+							<!-- <li class="In_money_one">1</li>
+							<li class="In_money_two">小强</li>
+							<li class="In_money_three">1097261469@qq.com</li>
+							<li class="In_money_four">123456789</li>
+							<li class="In_money_five Ec_del"></li> -->
+						</ul>
+					</div>
+					<div class="Ec_btn">
+						<a href="javascript:;">添加管理员</a>
+					</div>
+				</div>
+				
+
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/economyfit.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	//下列代码勿动
+		$(".zq_shade").css({"width":($(window).width())+"px"})
+		$(".zq_manage_centent").css({"height":($(".zq_centent").height()-230)+"px","width":($(".zq_centent").width()-104)+"px"});
+		$(".zq_index_whole").css({"min-height":($(window).height())+"px","min-width":($(window).width()-187)+"px"})
+		$(".zq_centent").css({"min-height":($("body").height())+"px","width":($(window).width()-187)+"px"})
+		$(".In_nav").css({"width":($(window).width()-170)+"px"})
+		$("#zq_nav_left").css({"min-height":($(window).height()-90)+"px"})
+		ajax("header.html",function(str){
+			var sA=str.indexOf("body>")
+			var sB=str.indexOf("</body")
+		   var scr=str.substring((sA+5),sB)
+			$('#zq_header').html(scr);
+			headerget()
+		},function(scr){
+			
+		});
+		ajax("navleft.html",function(str){
+			var sA=str.indexOf("body>")
+			var sB=str.indexOf("</body")
+		    var scr=str.substring((sA+5),sB)
+			$('#zq_nav_left').html(scr);
+			$(".zq_management_fit").addClass("zq_management_Get");
+			navleftget()
+		},function(scr){
+			
+		});
+		//弹窗
+		window.onload=function(){
+			$(".Ec_btn a").click(function(){
+				$(".Ec_fame").val("");
+				$(".Ec_num").val("");
+				$(".Ec_pwd").val("");
+				$(".Ec_bg").css("display","block");
+			});
+			$(".Ec_cancel").click(function(){
+				$(".Ec_bg").css("display","none");
+			});
+			$(".In_money_five").click(function(){
+				$(".Ec_bgtwo").css("display","block");
+			});
+			$(".zq_export_move").click(function(){
+				$(".Ec_bgtwo").css("display","none");
+			});
+		}
+
+	</script>
+</html>

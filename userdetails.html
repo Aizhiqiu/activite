@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>用户详情</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/backstage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/userdetails.css"/>
+		<script src="js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<div class="zq_index_whole">
+			<header id="zq_header"></header>
+			<div id="zq_nav_left">	
+			</div>
+			<div class="zq_centent">
+				<div class="In_nav">
+					<!--&nbsp; > &nbsp;<span>用户详情</span>
+					<a class="zq_back" href="javascript:;">返回</a>-->
+				</div>
+				<div class="Us_content">
+					<div class="Us_con_inner">
+						<div class="Us_basic">
+							<div class="Us_basic_con">
+								<h3>基本信息</h3>
+								<ul class="Us_basic_inner">
+									<li>姓名：&nbsp;<span id="name"></span><span class="Us_name"></span></li>
+									<li>电话：&nbsp;<span id="tel"></span></li>
+									<li class="Us_alipay">
+										<ul>
+											<li>支付宝</li>
+											<li class="User_telBake">账号：&nbsp;<span id="ipayAccount"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓名：<span id="ipayName"></span></li>
+											<li class="User_title">该账户没有绑定支付宝</li>
+										</ul>
+									</li>
+									<li>
+										<ul class="User_alipay_inner">
+											<li class="Us_alipay">银行账户</li>
+											<li>银行名称：&nbsp;<span id="band"></span></li>
+											<li>开户姓名：&nbsp;<span id="bandName"></span></li>
+											<li>开户城市：&nbsp;<span id="bandCity"></span></li>
+											<li>开户分行：&nbsp;<span id="branch"></span></li>
+										</ul>
+									
+									</li>
+									
+								</ul>
+							</div>
+							<div class="Us_basic_photo">
+								<img src="img/activity-logo-4.png"/>
+							</div>
+						</div>
+
+						<div class="Us_basic">
+							<h3>历史活动</h3>
+							<div class="Us_allotratio clearfix">
+								<div class="Us_allot">
+									<span class="Us_allot_one">活动状态</span>
+									<span class="Us_allot_two">活动名称</span>
+									<span class="Us_allot_three">角色</span>
+								</div>
+								<ul class="Us_allot_All">
+								
+								</ul>
+								
+							</div>
+
+                              <span id="sp"></span>
+                              
+                              </div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/userdetails.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+//		$("body").css({"height":$(window).height()+"px"});
+		$(".zq_centent").css({"height":($(window).height()-90)+"px","width":($(window).width()-190)+"px"})
+		$(".In_nav").css({"width":($(window).width()-170)+"px"})
+		ajax("header.html",function(str){
+			var sA=str.indexOf("body>")
+			var sB=str.indexOf("</body")
+		   	var scr=str.substring((sA+5),sB)
+			$('#zq_header').html(scr);
+			headerget()
+		},function(scr){
+			
+		});
+		ajax("navleft.html",function(str){
+			var sA=str.indexOf("body>")
+			var sB=str.indexOf("</body")
+		    var scr=str.substring((sA+5),sB)
+			$('#zq_nav_left').html(scr);
+			var cruxVariable=webStorage();
+			var index=cruxVariable.getItem("index");
+			managementGet(index);
+			navleftget()
+		},function(scr){
+			
+		});
+	</script>
+</html>
