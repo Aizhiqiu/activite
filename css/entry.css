@@ -1,0 +1,193 @@
+@charset "utf-8";
+body{
+	background: #ffffff;
+}
+.zq_kosp{
+	height: 90px;
+	width: auto;
+	min-width: 900px;
+	background: #27374e;
+}
+.zq_nav{
+	height: 90px;
+	/*width:1200px;*/
+	width: 100%;
+	color: #FFFFFF;
+	background-color: #282e35;
+	background-size: 100%;
+	margin: 0 auto;
+}
+.zq_logo{
+	float: left;
+	margin-left: 12px;
+	height: 90px;
+}
+.zq_logo div,.zq_logo a{
+	float: left;
+}
+.zq_logolmouse{
+	text-indent:-3000px;
+	height: 49px;
+	width: 49px;
+	display: inline-block;
+	background: url(../img/logolmoues.png) 0 no-repeat;
+	background-size: 100%;
+	margin: 20px 0 20px 0;
+}
+.zq_logoltex{
+	height: 58px;
+	width: 208px;
+	border-right: 1px solid #ff503f;
+	margin-top: 16px;
+	padding-left: 8px;
+	padding-top: 14px;
+	color: #FFFFFF;
+	font-size: 14px ;
+}
+.zq_logoltex_href{
+	display: inline-block;
+	font-size: 12px;
+	margin-top: -3px;
+}
+.zq_logoltle{
+	height: 90px;
+	line-height: 90px;
+	font-size: 26px;
+	padding-left: 14px;
+	color: #FFFFFF;
+}
+.Lo_entry{
+	display: block;
+	color:#fff;
+	font-size:18px;
+	float:right;
+	line-height: 90px;
+	padding:0px 26px;
+}
+/*内容部分*/
+.Lo_content{
+	width: 706px;
+	height: 552px;
+	background: #f9f9f9;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top:-226px;
+	margin-left:-353px;
+	-moz-box-shadow: 0px 0px 30px #c5c5c5;
+    -webkit-box-shadow: 0px 0px 30px #c5c5c5;
+    box-shadow:  0px 0px 30px #c5c5c5;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=30, Direction=135, Color='#c5c5c5')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=30, Direction=135, Color='#c5c5c5');
+}
+
+.Lo_header{
+	padding:42px 0 0 75px;
+}
+.Lo_header_l{
+	float:left;
+	width: 257px;
+	height: 58px;
+	border-right:1px solid #ff503f;
+}
+.Lo_header_r{
+	float: left;
+	padding-left:16px;
+	font-size:26px;
+	line-height: 58px;
+}
+.Lo_header_con{
+	padding-top:74px;
+	width: 408px;
+	margin:0 auto;
+	position: relative;
+}
+.Lo_header_con span{
+	width: 74px;
+	height: 43px;
+	display: block;
+	text-align: right;
+	padding-right:13px;
+	float:left;
+}
+.Lo_name,.Lo_password{
+	width: 408px;
+	font-size:14px;
+	height: 43px;
+	line-height: 43px;
+	float:left;
+}
+.Lo_name{
+	margin-bottom:16px;
+}
+.Lo_num,.Lo_pwd{
+	width: 332px;
+	height: 43px;
+	font-size: 18px;
+	border:1px solid #e4e6e8;
+	border-radius:1px;
+	margin-bottom:16px;
+	padding-left:15px;
+}
+.Lo_btn{
+	display: block;
+	font-size:14px;
+	width: 100%;
+	height: 43px;
+	text-align: center;
+	line-height: 43px;
+	color:#fff;
+	background: #77d31d;
+	margin-top: 140px;
+}
+#span{
+	margin: 0 auto;
+    text-align: center;
+    font-family: Georgia;
+    position: absolute;
+    bottom: 46px;
+    left: 125px;
+    color: #FF0000;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1400px) {
+	.Lo_content{
+		width: 680px;
+		height: 408px;
+		top: 58%;	
+	}
+    
+}
+@media only screen and (max-height: 700px)  {
+	.Lo_content{
+		width: 680px;
+		height: 408px;
+		top: 58%;	
+	}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

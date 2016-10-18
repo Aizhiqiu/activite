@@ -1,0 +1,212 @@
+@charset "utf-8";
+/*====报名名单====*/
+.zq_user_search{
+	height: 106px;
+	width: auto;
+	background: #FFFFFF;
+	padding-left: 52px;
+}
+
+.zq_user_search .zq_list_title{
+	font-size: 24px;
+	color: #4b4b4b;
+	display: inline-block;
+	margin-top: 59px;
+}
+.zq_user_button{
+	float: right;
+	margin-right: 46px;
+	margin-top: 34px;
+}
+.zq_user_button a{
+	color: #fff;
+    height: 38px;
+    width: 88px;
+    line-height: 38px;
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+    margin-top: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    background: #2FB791;
+}
+.zq_mae {
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    margin-bottom: -1px;
+    margin-right: 10px;
+}
+.zq_mae_export {
+    background: url(../img/export.png) 0 no-repeat;
+    background-size: 100%;
+}
+.zq_centent .zq_manage_centent{
+	margin-top: 0;
+}
+
+.zq_list_nav{
+	height: 41px;
+	width: 100%;
+	/*min-width: 1042px;*/
+	background: #F1F1F1;
+	border-bottom: 1px solid #D3D7DA;
+	line-height: 41px;
+}
+.zq_list_teble{
+	border-bottom: 1px solid #D3D7DA;
+}
+.zq_list_nav li,.zq_list_teble li{
+	float: left;
+	text-align: center;
+	/*color: #4B4B4B;
+	font-size: 18px;*/
+}
+.zq_list_teble li{
+	height: 66px;
+	line-height: 66px;
+}
+.zq_list_number{
+	width: 5.86px;
+	min-width: 50px;
+	margin-right: 1.25%;
+}
+.zq_list_name{
+	width: 11.23%;
+	min-width: 80px;
+	overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/ 
+}
+.zq_list_name a{
+	display: block;
+	overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/ 
+}
+.zq_list_names{
+	width: 14.17%;
+	min-width: 100px;
+	overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/ 
+}
+.zq_list_prices{
+	width: 18.3225%;
+	min-width: 180px;
+}
+.zq_list_paytype{
+	width: 19.52%;
+	min-width: 120px;
+}
+.zq_list_paydepth{
+	width: 25.54%;
+	min-width: 240px;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*第二种*/
+
+.zq_list_paydepth_two{
+	padding-top: 10px;
+	width: 25.54%;
+	min-width: 240px;
+}
+.zq_list_paydepth_two p{
+	height: 22px;
+	line-height: 22px;
+}
+/*第三种*/
+.zq_list_paydepth_three{
+	width: 25.54%;
+	min-width: 240px;
+}
+.zq_list_paydepth_three p{
+	height: 22px;
+	line-height: 22px;
+}
+/*弹窗*/
+.zq_list_export{
+	height: 305px;
+	width: 580px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	z-index: 11;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	display: none;
+}
+.zq_alert_export{
+	display: inline-block;
+	height: 46px;
+	width: 100%;
+	line-height: 46px;
+	text-align: center;
+	color: #282E35;
+	font-size: 18px;
+	border-bottom: 1px solid #FF503F;
+}
+.zq_alert_centent{
+	width: 100%;
+	line-height: 30px;
+	color: #282e35;
+	font-size: 14px;
+	margin-top: 25px;
+	padding: 0 46px;
+}
+.zq_alert_button{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: 19px;
+}
+.zq_alert_button a{
+	display: inline-block;
+	height: 32px;
+	width: 107px;
+	line-height: 32px;
+	text-align: center;
+	background: #2fb791;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+.zq_alert_button .zq_export_move{
+	height: 33px;
+	border: 1px solid #FF503F;
+	color: #FF503F;
+	background: #FFFFFF;
+	margin-bottom: -1px;
+	margin-left: 12px;
+}
+.zq_list_nameone:hover{
+	color: #FF503F;
+}
+.zq_user_search .zq_user_button .zq_mae_remove_altA {
+    background: #DACDCB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

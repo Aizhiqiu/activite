@@ -1,0 +1,376 @@
+@charset "utf-8";
+body{
+	min-width: 960px;
+	min-height: 860px;
+	/*overflow-x: scroll;*/
+}
+=====导航条=====
+.zq_over_nav{
+    position: fixed;
+    left: 170px;
+    top: 90px;
+    z-index: 5;
+}
+.zq_mantel_nav{
+	display: inline-block;
+}
+.In_nav{
+	height: 56px;
+	min-width: 790px;
+	background: #f1f1f1;
+	border-bottom:1px solid #d3d7da;
+	line-height: 56px;
+	padding-left:20px;
+	color:#282e35;
+}
+.In_nav span{
+	font-size:12px;
+	cursor:pointer;
+}
+.In_nav span:hover{
+	color:#ff503f;
+}
+.In_nav .zq_back{
+	height: 30px;
+	width: 62px;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #D3D7DA;
+	background: #f8f8f8;
+	color: #282E35;
+	font-size: 14px;
+	float: right;
+	margin-right: 44px;
+	margin-top: 13px;
+}
+.In_nav .zq_back:hover{
+	border: 1px solid #ff503f;
+	color: #ff503f;
+}
+/*======内容	======*/
+.zq_centent_statements{
+	min-width: 1100px;
+	min-height: 714px;
+	position: absolute;
+	top: 146px;
+	left: 170px;
+}
+/*==内容导航==*/
+.zq_index_navtab{
+	height: 80px;
+	width: auto;
+	background: #F1F1F1;
+}
+.zq_index_navtab li{
+	float: left;
+	height: 80px;
+	width: 268px;
+	text-align: center;
+	line-height: 79px;
+	background: #F8F8F8;
+	border: 1px solid #d3d7da;
+	border-left: 0;
+	border-top: 0;
+	color: #4b4b4b;
+	font-size: 22px;
+	cursor:pointer;
+	position: relative;
+}
+.zq_index_navtab ul li span{
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	background-size: 100%;
+	margin-right: 8px;
+	margin-bottom: -6px;
+}
+.zq_index_navtab .zq_manage_examine{
+	background: url(../img/01-4.png) 0 no-repeat;
+}
+.zq_index_navtab .zq_manage_hold{
+	background: url(../img/01-5.png) 0 no-repeat;
+}
+.zq_index_navtab li div{
+	height: 31px;
+	width: 31px;
+	line-height: 31px;
+	text-align: 31px;
+	color: #FFFFFF;
+	font-size: 12px;
+	display: inline-block;
+	border-radius: 50%;
+	background: #ff503f;
+	margin-left: 8px;
+}
+/*==选中状态==*/
+.zq_index_navtab .zq_navtab_Get{
+	background: #FFFFFF;
+	border-bottom: 0;
+}
+/*======分页位置=======*/
+.zq_centent_statements .zq_paging{
+	padding-top:0;
+}
+/*====内容操作栏=====*/
+.zq_choice{
+	height: 85px;
+	width: 100%;
+	line-height: 85px;
+}
+
+/*====全选=====*/
+.zq_user_choice {
+    height: 28px;
+    padding-left: 52px;
+    float: left;
+    display: inline-block;
+}
+.zq_user_choice span {
+    font-size: 18px;
+    color: #27374E;
+}
+.zq_choice_get {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background: url(../img/choice.png) 0 no-repeat;
+    background-size: 100%;
+    margin: 0 14px -3px 32px;
+    cursor: pointer;
+}
+.zq_user_choice .zq_choice_fewer{
+    font-size: 12px;
+    color: #9ea3aa;
+    margin-left: 10px;
+    margin-bottom: -2px;
+}
+/*全选状态*/
+.zq_choice_gettow {
+    background: url(../img/table.png) 0 no-repeat;
+}
+/*========导出========*/
+.zq_user_button{
+	float: right;
+	display: inline-block;
+	margin-top: 25px;
+	margin-right: 55px;
+}
+.zq_user_button a {
+    color: #fff;
+    height: 38px;
+    width: 88px;
+    line-height: 38px;
+    text-align: center;
+    float: left;
+    /*margin-left: 10px;
+    margin-top: 8px;*/
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    background: #2FB791;
+}
+/*=======列表======*/
+.zq_withdrawals{
+	width: 100%;
+	padding: 0 48px;
+}
+.zq_withdrawals_title{
+	width: 100%;
+	min-height: 540px;
+	border: 1px solid #d3d7da;
+}
+/*====选择====*/
+.zq_mae_click {
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    background: url(../img/choice.png) 0 no-repeat;
+    background-size: 100%;
+    margin-bottom: -3px;
+    cursor: pointer;
+}
+/*选择状态*/
+.zq_mae_clicktwo {
+    background: url(../img/table.png) 0 no-repeat;
+}
+
+/*==表头==*/
+.zq_tittle_head{
+	width: 100%;
+	height: 41px;
+	background: #F1F1F1;
+	color: #696969;
+	border-bottom: 1px solid #D3D7DA;
+	line-height: 41px;
+	font-size: 16px;
+}
+.zq_tittle_head span{
+	display: inline-block;
+	text-align: center;
+}
+.zq_mover{
+	width: 5.368%;
+	min-width: 28px;
+}
+.zq_name_title{
+	/*width: 11.54%;*/
+	width: 18.26%;
+	min-width: 62px;
+}
+.zq_mobile{
+	/*width: 13.25%;*/
+	width: 11.25%;
+	min-width: 72px;
+}
+.zq_money_ply{
+	width: 18.699%;
+	min-width: 100px;
+}
+.zq_money_names{
+	/*width: 15.86%;*/
+	width: 12.86%;
+	min-width: 102px;
+}
+.zq_money_nubmo{
+	width: 15.77%;
+	min-width: 86px;
+}
+.zq_money_review{
+	/*width: 16.26%;*/
+	width: 14.26%;
+	min-width: 88px;
+}
+.zq_withdrawals_centent{
+	width: 100%;
+	height: 62px;
+	line-height: 62px;
+	background: #FFFFFF;
+	color: #4b4b4b;
+	font-size: 16px;
+	border-bottom: 1px solid #d3d7da;
+}
+.zq_withdrawals_centent span{
+	display: inline-block;
+	text-align: center;
+}
+.zq_money_review a{
+	height: 30px;
+	width: 105px;
+	border: 1px solid #d3d7da;
+	border-radius: 15px;
+	display: inline-block;
+	line-height: 30px;
+}
+
+
+.zq_money_withdrawals:hover,.zq_money_withdraw:hover,.zq_money_withd:hover{
+	color: #ff503f;
+	border: 1px solid #ff503f;
+}
+/*======弹框======*/
+.zq_currentmanage_direct,.zq_currentmanage_draft{
+	height: 305px;
+	width: 580px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	z-index: 11;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	display: none;	
+}
+.zq_alert_export{
+	display: inline-block;
+	height: 46px;
+	width: 100%;
+	line-height: 46px;
+	text-align: center;
+	color: #282E35;
+	font-size: 18px;
+	border-bottom: 1px solid #FF503F;
+}
+.zq_alert_centent{
+	height: 200px;
+	width: 100%;
+	color: #282E35;
+	font-size: 16px;
+	text-align: center;
+}
+.zq_alert_centent span{
+	display: inline-block;
+	width: 100%;
+	line-height: 85px;
+	text-align: center;
+}
+#zq_aliply_number{
+	height: 30px;
+	width: 310px;
+	border: 1px solid #d3d7da;
+	padding: 0 15px;
+	text-align: center;
+}
+/*确定-取消*/
+.zq_alert_button{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: 19px;
+}
+.zq_alert_button a{
+	display: inline-block;
+	height: 32px;
+	width: 107px;
+	line-height: 32px;
+	text-align: center;
+	background: #2fb791;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+.zq_alert_button .zq_alert_move,.zq_alert_button .zq_draft_move{
+	height: 33px;
+	border: 1px solid #FF503F;
+	color: #FF503F;
+	background: #FFFFFF;
+	margin-bottom: -1px;
+	margin-left: 12px;
+}
+/*==弹框2==*/
+.zq_money_withdrawals_list{
+	width: 100%;
+    height: 200px;
+    color: #282E35;
+    font-size: 16px;
+    padding-left: 80px;
+    padding-top: 20px;
+    line-height: 36px;
+}
+
+.zq_moner_Getshw{
+	position:relative;	
+}
+.zq_moner_Getone_fase{
+	position: absolute;
+    right: 33px;
+    top: 15px;
+    height: 31px;
+    width: 31px;
+    line-height: 31px;
+    text-align: 31px;
+    color: #FFFFFF;
+    font-size: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #ff503f;
+}
+.zq_index_navtab li:hover{
+	color: #FF503F;
+}
+
+
+
+

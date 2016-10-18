@@ -1,0 +1,164 @@
+@charset "utf-8";
+/*========金额管理========*/
+  
+/*内容头部*/
+.zq_centent h1{
+	padding:56px 0 24px 52px;
+	height: 105px;
+	font-size:24px;
+	color:#4b4b4b;
+	font-weight: normal;
+}
+
+
+/*列表*/
+.Lu_centent{
+	border: 1px solid #D3D7DA;
+	/*min-width: 920px;*/
+	margin: 0 auto;
+	margin-left: 52px;
+	margin-right: 52px;
+}
+.Lu_centent .Lu_nav{
+	height: 41px;
+	line-height: 41px;
+	width: 100%;
+	background: #F1F1F1;
+	border-bottom: 1px solid #d3d7da;
+}
+.Lu_nav span,.Lu_table li{
+	float: left;
+	color: #4b4b4b;
+	font-size: 18px;
+	text-align: center;
+	height: 41px;
+	line-height: 41px;
+}
+.Lu_table li{
+	height: 60px;
+	line-height: 60px;
+}
+.Lu_money_one,.Lu_num{
+	width: 8%;
+	min-width:70px ;
+}
+.Lu_money_two,.Lu_name{
+	width: 14%;
+	min-width:100px;
+	
+}
+.Lu_title span{
+	display: block;
+    height: 60px;
+    margin: 0 auto;
+    width: 288px;
+	overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+}
+.Lu_money_three,.Lu_vip{
+	width: 14%;
+	min-width:100px ;
+}
+.Lu_money_four,.Lu_money{
+	width:14%;
+	min-width:100px ;
+}
+.Lu_money_five,.Lu_oney_one{
+	width:14%;
+	min-width:100px;
+}
+.Lu_money_six,.Lu_oney_two{
+	width:14% ;
+	min-width: 100px;
+}
+.Lu_centent .Lu_table{
+	height: 64px;
+	line-height: 64px;
+	width: 100%;
+	border-bottom: 1px solid #d3d7da;
+	color: #4B4B4B;
+	font-size: 18px;
+}
+
+/*分页*/
+.zq_paging{
+	height: 102px;
+	width: 100%;
+	line-height: 102px;
+	text-align: center;
+	padding-top: 38px;
+}
+.zq_paging_centent{
+    display: inline-flex;
+}
+.zq_paging_centent a{
+	float: left;
+	height: 25px;
+	width: 59px;
+	border: 1px solid #d4d7dc;
+	margin-right: 10px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 25px;
+}
+.zq_paging_centent a span{
+	height: 9px;
+	width: 5px;
+	display: inline-block;
+	background: url(../img/get15.png) 0 no-repeat;
+	background-size: 100%;
+    margin-bottom: 1px;
+    margin-right: 4px;
+}
+.zq_paging_centent .zq_paging_toget span{
+	background: url(../img/get16.png) 0 no-repeat;
+	margin-left: 4px;
+}
+.zq_paging_centent li{
+	float: left;
+	height: 25px;
+	width: 27px;
+	line-height: 25px;
+	text-align: center;
+	border: 1px solid #d4d7dc;
+	margin-right: 5px;
+	font-size: 10px;
+ 	cursor:pointer;
+}
+.zq_paging_centent .zq_paging_isweay{
+	border: 0;
+}
+.zq_paging_centent .zq_paging_number,.zq_paging_centent .zq_paging_numberis{
+	font-size: 12px;
+	color: #969ba3;
+	line-height: 25px;
+	float: left;
+}
+.zq_paging_centent input{
+	float: left;
+}
+#zq_paging_numberget{
+	height: 20px;
+	width: 32px;
+	border: 1px solid #d4d7dc;
+	margin: 3px 8px 0 6px;
+}
+#zq_paging_numbget{
+	height: 19px;
+	width: 37px;
+	line-height: 19px;
+	text-align: 37px;
+	border: 1px solid #27374e;
+	font-size: 12px;
+	margin-left: 2px;
+	margin-top: 4px;
+}
+
+
+
+
+
+
+
+

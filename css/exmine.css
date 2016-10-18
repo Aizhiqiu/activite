@@ -1,0 +1,242 @@
+@charset "utf-8";
+body{
+	min-width: 960px;
+	min-height: 860px;
+	/*overflow-x: scroll;*/
+}
+/*=====导航条=====*/
+.zq_over_nav{
+    position: fixed;
+    left: 170px;
+    top: 90px;
+    z-index: 5;
+}
+.zq_mantel_nav{
+	display: inline-block;
+}
+.In_nav{
+	height: 56px;
+	min-width: 790px;
+	background: #f1f1f1;
+	border-bottom:1px solid #d3d7da;
+	line-height: 56px;
+	padding-left:20px;
+	color:#282e35;
+}
+.In_nav span{
+	font-size:12px;
+	cursor:pointer;
+}
+.In_nav span:hover{
+	color:#ff503f;
+}
+.In_nav .zq_back{
+	height: 30px;
+	width: 62px;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #D3D7DA;
+	background: #f8f8f8;
+	color: #282E35;
+	font-size: 14px;
+	float: right;
+	margin-right: 44px;
+	margin-top: 13px;
+}
+.In_nav .zq_back:hover{
+	border: 1px solid #ff503f;
+	color: #ff503f;
+}
+/*======内容	======*/
+.zq_centent_statements{
+	min-width: 1100px;
+	min-height: 780px;
+	position: absolute;
+	top: 146px;
+	left: 170px;
+	background: #fafafa;
+	padding: 28px 48px;
+}
+/*==上为新框架通用==*/
+
+
+/*===左侧===*/
+.zq_centent_left{
+	float: left;
+	height: 100%;
+	width: 42.897%;
+	min-width: 406px;
+	background: #FFFFFF;
+	border-radius: 15px;
+	padding-top: 7px;
+	padding-left: 10px;
+	line-height: 34px;
+	font-size: 14px;
+	color: #282e35;
+}
+.zq_title_left{
+	display: inline-block;
+	width: 128px;
+}
+.zq_money{
+	display: inline-block;
+	width: 150px;
+}
+.zq_examine_button{
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 60px;
+}
+.zq_examine_button a{
+	height: 30px;
+	width: 70px;
+	background: #2FB791;
+	color: #FFFFFF;
+	display: inline-block;
+	line-height: 28px;
+	border: 1px solid #2FB791;
+}
+.zq_examine_button .zq_examine_moueNo{
+	color: #333333;
+	border: 1px solid #363636;
+	background: #FFFFFF;
+	margin-left: 22px;
+}
+.zq_list_manger{
+	height: 34px;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	color: #282e35;
+	line-height: 34px;
+	position: relative;
+	margin-bottom: 20px;
+}
+.zq_manger_title{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+.zq_manger_move{
+	position: absolute;
+	top: 4px;
+	right: 80px;
+	height: 34px;
+	line-height: 34px;
+	color: #b7b7b7;
+	font-size: 14px;
+}
+.zq_manger_table{
+	padding: 0 14px;
+	width: 100%;
+	min-height: 90%;
+}
+.zq_tatl_manger{
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	color: #282e35;
+	text-align: center;
+}
+.zq_manger_one{
+	display: inline-block;
+	min-width: 32px;
+	width: 6.4%;
+	height: 34px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.zq_manger_toe{
+	display: inline-block;
+	min-width: 232px;
+	width: 45%;
+	height: 34px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.zq_manger_thw{
+	display: inline-block;
+	min-width: 90px;
+	width: 18%;
+	height: 34px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.zq_manger_four{
+	display: inline-block;
+	min-width: 130px;
+	width: 26%;
+	height: 34px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+/*===右侧===*/
+.zq_centent_right{
+	float: right;
+	height: 100%;
+	width: 50.042%;
+	min-width: 528px;
+	background: #FFFFFF;
+	border-radius: 15px;
+	display: none;
+	padding-top: 10px;
+	position: relative;
+}
+.zq_manger_oneA{
+	display: inline-block;
+	min-width: 32px;
+	width: 6.4%;
+	height: 34px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.zq_manger_toeA{
+	display: inline-block;
+	min-width: 200px;
+	width: 40%;
+	height: 34px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.zq_manger_thwA{
+	display: inline-block;
+	min-width: 90px;
+	width: 18%;
+	height: 34px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.zq_manger_fourA{
+	display: inline-block;
+	min-width: 165px;
+	width: 33%;
+	height: 34px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+
+.zq_money_list:hover,.zq_examine_list:hover{
+	color: #ff503f;
+}
+.zq_money_list,.zq_examine_list{
+	cursor: pointer;
+}
+.zq_centent_right .zq_paging{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}

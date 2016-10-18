@@ -1,0 +1,367 @@
+@charset "utf-8";
+body{
+	background: #ffffff;
+}
+.zq_kosp{
+	height: 90px;
+	width: auto;
+	min-width: 900px;
+	background: #27374e;
+}
+.zq_nav{
+	height: 90px;
+	/*width:1200px;*/
+	width: 100%;
+	color: #FFFFFF;
+	background-color: #282e35;
+	background-size: 100%;
+	margin: 0 auto;
+}
+.zq_logo{
+	float: left;
+	margin-left: 12px;
+	height: 90px;
+}
+.zq_logo div,.zq_logo a{
+	float: left;
+}
+.zq_logolmouse{
+	text-indent:-3000px;
+	height: 49px;
+	width: 49px;
+	display: inline-block;
+	background: url(../img/logolmoues.png) 0 no-repeat;
+	background-size: 100%;
+	margin: 20px 0 20px 0;
+}
+.zq_logoltex{
+	height: 58px;
+	width: 208px;
+	border-right: 1px solid #ff503f;
+	margin-top: 16px;
+	padding-left: 8px;
+	padding-top: 14px;
+	color: #FFFFFF;
+	font-size: 14px ;
+}
+.zq_index_mode{
+	cursor: pointer;
+}
+.zq_logoltex_href{
+	display: inline-block;
+	font-size: 12px;
+	margin-top: -3px;
+}
+.zq_logoltle{
+	height: 90px;
+	line-height: 90px;
+	font-size: 26px;
+	padding-left: 14px;
+	color: #FFFFFF;
+}
+
+.zq_nav ul{
+    float:right;
+    height: 89px;
+    line-height:89px;
+    padding-right: 44px;
+    color:#fff;
+    width: 220px;
+}
+.zq_nav ul li{
+    float:left;
+}
+.zq_nav .In_name{
+    font-size:18px;
+    width:130px;
+    padding-right:16px;
+    text-align: right;
+    height: 90px;
+    line-height: 90px;
+}
+.In_next span{
+    display: inline-block;
+    width: 46px;
+    height: 20px;
+    border:1px solid #ff503f;
+    font-size:12px;
+    line-height: 20px;
+    color:#ff503f;
+    margin-top: 35px;
+    text-align: center;
+}
+.zq_nav .In_next{
+   height: 89px;
+    cursor: pointer;
+}
+
+
+.zq_nav_left{
+	width: 170px;
+	height: 100%;
+	background: #1e2328;
+	padding-top: 42px;
+	float: left;
+}
+.zq_nav_left li{
+	/*height: 159px;*/
+	width: 100%;
+	margin-bottom: 0px;
+    padding-top: 19px;
+   	padding-bottom: 48px;
+	position: relative;
+	cursor: pointer;
+}
+.zq_nav_left li .zq_ingdex_logo{
+	height: 44px;
+	width: 43px;
+	margin: 0 0 11px 64px;
+}
+.zq_nav_left li .zq_ingdex_tiele{
+	height: 12px;
+	font-size: 12px;
+	color: #FFFFFF;
+	line-height: 12px;
+	text-align: center;
+}
+
+.zq_management_activity .zq_ingdex_logo{
+	background: url(../img/img1-1-2.png) 0 no-repeat;
+	background-size: 100%;
+}
+.zq_management_user .zq_ingdex_logo{
+	background: url(../img/img1-2.png) 0 no-repeat;
+	background-size: 100%;
+}
+.zq_management_money .zq_ingdex_logo{
+	background: url(../img/img1-3.png) 0 no-repeat;
+	background-size: 100%;
+}
+.zq_management_fit .zq_ingdex_logo{
+	background: url(../img/img1-4-1.png) 0 no-repeat;
+	background-size: 100%;
+}
+
+.zq_nav_left .zq_ingdex_detas{
+	height: 111px;
+	width: 4px;
+	background: url(../img/img1-4.png) 0 no-repeat;
+	background-size: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.zq_management_Get .zq_activity{
+	background: url(../img/img1-1.png) 0 no-repeat;
+	background-size: 100%;
+}
+.zq_nav_left .zq_management_Get .zq_ingdex_detas{
+	display: block;
+}
+.zq_management_Get .zq_user{
+	background: url(../img/img1-2-2.png) 0 no-repeat;
+	background-size: 100%;
+}
+.zq_management_Get .zq_money{
+	background: url(../img/img1-3-2.png) 0 no-repeat;
+	background-size: 100%;
+}
+.zq_management_Get .zq_fit{
+	background: url(../img/img1-4-2.png) 0 no-repeat;
+	background-size: 100%;
+}
+
+.zq_management_Get .zq_ingdex_detas{
+	display: block;
+}
+
+.In_nav{
+	height: 56px;
+	/*width:100%;*/
+	background: #f1f1f1;
+	border-bottom:1px solid #d3d7da;
+	line-height: 56px;
+	padding-left:20px;
+	color:#282e35;
+}
+.In_nav span{
+	font-size:12px;
+	cursor:pointer;
+}
+.In_nav span:hover{
+	color:#ff503f;
+}
+
+.In_nav .zq_back{
+	height: 30px;
+	width: 62px;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #D3D7DA;
+	background: #f8f8f8;
+	color: #282E35;
+	font-size: 14px;
+	float: right;
+	margin-right: 44px;
+	margin-top: 13px;
+}
+.In_nav .zq_back:hover{
+	border: 1px solid #ff503f;
+	color: #ff503f;
+}
+
+
+.zq_index_whole{
+	/*height: 100%;*/
+	width: auto;
+	/*min-width: 900px;*/
+	margin-left: 170px;
+}
+#zq_header{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 5;
+}
+#zq_nav_left{
+	position: fixed;
+	left: 0;
+	top: 90px;
+	z-index: 5;
+	height: 100%;
+}
+.zq_centent{
+	min-width: 1000px;
+	/*margin-left: 170px;*/
+	margin-top: 146px;
+	background: #FFFFFF;
+	display: none;
+}
+.In_nav{
+	position: fixed;
+	left: 170px;
+	top: 90px;
+	z-index: 5;
+	display: none;
+}
+
+.zq_manage_centent{
+	border: 1px solid #D3D7DA;
+	/*min-width: 920px;*/
+	margin: 0 auto;
+	margin-top: 48px;
+	margin-left: 52px;
+	margin-right: 52px;
+}
+
+
+
+
+.zq_paging{
+	height: 102px;
+	width: 100%;
+	line-height: 102px;
+	text-align: center;
+	padding-top: 38px;
+}
+.zq_paging_centent{
+    display: inline-flex;
+}
+.zq_paging_centent a{
+	float: left;
+	height: 25px;
+	width: 59px;
+	border: 1px solid #d4d7dc;
+	margin-right: 10px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 25px;
+}
+.zq_paging_centent a span{
+	height: 9px;
+	width: 5px;
+	display: inline-block;
+	background: url(../img/get15.png) 0 no-repeat;
+	background-size: 100%;
+    margin-bottom: 1px;
+    margin-right: 4px;
+}
+.zq_paging_centent .zq_paging_toget span{
+	background: url(../img/get16.png) 0 no-repeat;
+	margin-left: 4px;
+}
+.zq_paging_centent li{
+	float: left;
+	height: 25px;
+	width: 27px;
+	line-height: 25px;
+	text-align: center;
+	border: 1px solid #d4d7dc;
+	margin-right: 5px;
+	font-size: 10px;
+ 	cursor:pointer;
+}
+.zq_paging_centent li:hover{
+	color: #FF503F;
+	border: 1px solid #FF503F;
+}
+.zq_paging_centent .currentPage_s{
+	border: 1px solid #FF503F;
+	background: #ffdcd9;
+	color: #ff503f;
+}
+.zq_paging_centent a:hover{
+	color: #FF503F;
+	border: 1px solid #FF503F;
+}
+.zq_paging .zq_paging_centent .zq_paging_isweay{
+	border: 0;
+}
+.zq_paging_centent .zq_paging_number,.zq_paging_centent .zq_paging_numberis{
+	font-size: 12px;
+	color: #969ba3;
+	line-height: 25px;
+	float: left;
+}
+.zq_paging_centent input{
+	float: left;
+}
+#zq_paging_numberget{
+	height: 20px;
+	width: 32px;
+	border: 1px solid #d4d7dc;
+	margin: 3px 8px 0 6px;
+	text-align: center;
+}
+#zq_paging_numbget{
+	height: 19px;
+	width: 37px;
+	line-height: 19px;
+	text-align: 37px;
+	border: 1px solid #27374e;
+	font-size: 12px;
+	margin-left: 2px;
+	margin-top: 4px;
+}
+
+
+.zq_shade{
+	z-index: 10;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	background: #27374E;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	height: 100%;
+}
+
+
+
+
+

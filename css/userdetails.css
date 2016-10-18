@@ -1,0 +1,163 @@
+@charset "utf-8";
+.zq_index_whole{
+	height: 100%;
+	width: auto;
+	min-width: 900px;
+}
+#zq_header{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 5;
+}
+#zq_nav_left{
+	position: fixed;
+	left: 0;
+	top: 90px;
+	z-index: 5;
+}
+.zq_centent{
+	position: absolute;
+	left: 170px;
+	/*top: 90px;*/
+	background: #FFFFFF;
+}
+
+.zq_management_Get .zq_ingdex_detas{
+	display: block;
+}
+
+.Us_content{
+	width: 100%;
+	height: 100%;
+}
+.Us_con_inner{
+	width: 783px;
+	padding-left:20px;
+	padding-top:24px;
+}
+
+.Us_basic{
+	height: 380px;
+	width: 100%;
+}
+.Us_basic_con{
+	width: 350px;
+}
+.Us_basic h3{
+	text-align: center;
+    width: 92px;
+    border-left: 4px solid #2fb791;
+    font-size: 18px;
+}
+.Us_basic_inner{
+	padding:25px 0 0 25px;
+	width: 100%;
+}
+.User_alipay_inner{
+	margin-top: 40px;
+}
+.User_title{
+	display:none;
+}
+.Us_basic_inner li{
+	height: 30px;
+	width: 100%;
+	font-size:14px;
+}
+.Us_name{
+	margin-left:56px;
+}
+.Us_alipay{
+	margin-top:10px;
+}
+.Us_basic_con{
+	float:left;
+}
+.Us_basic_photo{
+	margin-top:50px;
+	width: 133px;
+	height: 165px;
+	background: #eef0f2;
+	-webkit-background-size: 40px 40px;
+	background-size: 40px 40px;
+	float:left;
+}
+.Us_basic_photo img{
+	width:100%;
+	height:100%;
+}
+
+.Us_allotratio{
+	width: 760px;
+	padding:25px 0 30px 25px;
+}
+.Us_allot_one,.Us_allot_first{
+	width: 150px;
+
+}
+.Us_allot_first{
+	width: 151px;
+	border-left:1px solid #d3d7da;
+}
+.Us_allot_two,.Us_allot_next{
+	width: 424px;
+}
+.Us_allot_three,.Us_allot_last{
+	width: 160px;
+}
+.Us_allot{
+	height: 30px;
+	border-top:1px solid #d3d7da;
+	border-right:1px solid #d3d7da;
+	border-bottom:1px solid #d3d7da;
+	background: #f8f8f8;
+}
+.Us_allot span{
+	height: 30px;
+	display: block;
+	float:left;
+	text-align: center;
+	line-height: 30px;
+	border-left:1px solid #d3d7da;
+}
+.Us_allotratio ul li{
+	height: 30px;
+	float:left;
+	text-align: center;
+	line-height: 30px;
+	border-right:1px solid #d3d7da;
+	border-bottom:1px solid #d3d7da;
+	display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.Us_allotratio .In_allot_first{
+
+}
+
+.In_button{
+	height: 26px;
+	margin:60px auto;
+	width: 160px;
+}
+.In_button span{
+	font-size: 14px;
+	width: 74px;
+	height: 26px;
+	border-radius:5px;
+	color:#fff;
+	text-align: center;
+	line-height: 26px;
+	cursor: pointer;
+	display: block;
+	float: left;
+}
+.In_button_ok{
+	background: #2fb791;
+}
+.In_button_no{
+	background: #ff503f;
+	margin-left:10px;
+}
+
+

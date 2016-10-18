@@ -1,0 +1,309 @@
+@charset "utf-8";
+.zq_index_whole{
+	height: 100%;
+	width: auto;
+	min-width: 900px;
+}
+#zq_header{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 5;
+}
+#zq_nav_left{
+	position: fixed;
+	left: 0;
+	top: 90px;
+	z-index: 5;
+}
+.Act_con .zq_centent{
+	position: absolute;
+	margin-top:0px;
+	left: 170px;
+	top: 90px;
+	background: #FFFFFF;
+}
+/*默认*/
+.zq_management_Get .zq_ingdex_detas{
+	display: block;
+}
+/*内容部分*/
+.In_content{
+	width: 100%;
+	height: 100%;
+    margin-top: 56px;
+}
+.In_con_inner{
+	width: 650px;
+	padding-left:20px;
+	padding-top:24px;
+}
+/*基本信息*/
+.In_basic h3{
+	text-align: center;
+    width: 92px;
+    border-left: 4px solid #2fb791;
+    font-size: 18px;
+}
+.In_basic_inner{
+	padding:25px 0 0 25px;
+	width: 100%;
+}
+.In_basic_inner li{
+	height: 40px;
+	width: 100%;
+	font-size:14px;
+}
+/*活动海报*/
+.In_basic_img,.In_basic_text{
+	height: 334px;
+	padding: 25px 0 30px 25px;
+    width: 100%;
+    display: block;
+    /*overflow: hidden;*/
+    text-overflow: ellipsis;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+.In_basic_img img{
+	width: 100%;
+	height: 100%;
+}
+/*活动详情*/
+.In_basic_text{
+	height:auto;
+}
+.In_basic_text_con{
+	line-height: 30px;
+	text-indent:2em;
+	margin-bottom:24px;
+}
+.In_basic_text img{
+	width: 100%;
+
+}
+/*报名信息*/
+.In_message li{
+	font-size:18px;
+}
+/*活动票价*/
+.In_activityMoney{
+	padding:25px 0 30px 25px;
+	width: 100%;
+}
+.In_money{
+	width: 100%;
+	height: 29px;
+	background: #f8f8f8;
+	border-top:1px solid #d3d7da;
+
+}
+.In_money span{
+	font-size: 14px;
+	display: block;
+	float:left;
+	text-align: center;
+	line-height: 29px;
+	border-right:1px solid #d3d7da;
+	border-bottom:1px solid #d3d7da;
+}
+.In_money_one{
+	border-left:1px solid #d3d7da;
+	width: 41px;
+}
+.In_money_two{
+	width: 154px;
+}
+.In_money_three{
+	width: 86px;
+}
+.In_money_four,.In_money_four_two,.In_money_four_one{
+	width: 151px;
+}
+.In_activityMoney ul,.In_allotratio ul{
+	width: 100%;
+}
+.In_activityMoney ul li{
+	font-size:18px;
+	height: 50px;
+	float:left;
+	text-align: center;
+	line-height: 50px;
+	border-right:1px solid #d3d7da;
+	border-bottom:1px solid #d3d7da;
+}
+.In_activityMoney ul .In_money_four{
+	line-height: normal;
+}
+/*第一种*/
+.In_money_four_one p span{
+	height: 50px;
+	line-height: 50px;
+}
+.In_money_four_one p{
+	font-size: 16px;
+}
+.In_money_four_two span{
+	height:50px;
+	line-height: 50px;
+}
+/*第二种*/
+.In_money_four_two span{
+	line-height: 30px;
+}
+.In_money_four_two p{
+	height: 16px;
+    font-size: 12px;
+}
+   
+
+
+.In_money_four span p{
+	 height: 16px;
+    font-size: 12px;
+}
+   
+.In_activityMoney .In_money_now{
+	font-size:12px;
+	width: 151px;
+	line-height: normal;
+}
+/*分配比例*/
+.In_allotratio{
+	width: 296px;
+	padding:25px 0 30px 25px;
+}
+.In_allot{
+	height: 30px;
+	border-top:1px solid #d3d7da;
+	border-right:1px solid #d3d7da;
+	border-bottom:1px solid #d3d7da;
+	background: #f8f8f8;
+}
+.In_allot span{
+	width: 90px;
+	height: 30px;
+	display: block;
+	float:left;
+	text-align: center;
+	line-height: 30px;
+	border-left:1px solid #d3d7da;
+}
+.In_allotratio ul li{
+	width: 90px;
+	height: 30px;
+	float:left;
+	text-align: center;
+	line-height: 30px;
+	border-right:1px solid #d3d7da;
+	border-bottom:1px solid #d3d7da;
+}
+.In_allotratio .In_allot_first{
+	border-left:1px solid #d3d7da;
+	width: 91px;
+}
+/*按钮*/
+.In_button{
+	height: 26px;
+	margin:60px auto;
+	width: 160px;
+}
+.In_button span{
+	font-size: 14px;
+	width: 74px;
+	height: 26px;
+	border-radius:5px;
+	color:#fff;
+	text-align: center;
+	line-height: 26px;
+	cursor: pointer;
+	display: block;
+	float: left;
+}
+.In_button_ok{
+	background: #2fb791;
+}
+.In_button_no{
+	background: #ff503f;
+	margin-left:10px;
+}
+/*弹窗*/
+.Ec_bg{
+	display: none;
+}
+#Ec_bg_inner{
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.5);
+	position: fixed;
+	top:0;
+	left:0;
+	right: 0;
+	bottom:0;
+	z-index: 10;
+}
+.Ec_content{
+	width: 580px;
+	height: 306px;
+	background: #fff;
+	border-radius:20px;
+	position: fixed;
+	left: 50%;
+	top:50%;
+	margin-top:-188px;
+	margin-left:-290px;
+	z-index: 11;
+}
+.Ec_header{
+	height: 45px;
+	width: 100%;
+	font-size:18px;
+	text-align: center;
+	line-height: 45px;
+	border-bottom:1px solid #ff503f;
+}
+.Ec_inner{
+	padding:0 20px 0 20px;
+}
+.Ec_inner p{
+	height: 35px;
+	font-size:14px;
+	line-height: 35px;
+}
+.Ec_text{
+	width:100%;
+	height:146px ;
+	border:1px solid #d3d7da;
+}
+.zq_draft_centent{
+	width: 100%;
+    height: 144px;
+}
+.Ec_bg_btn{
+	width: 228px;
+	height: 30px;
+	margin: 30px auto 0px;
+}
+.Ec_bg_btn span{
+	cursor: pointer;
+	display: block;
+	width: 106px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius:5px;
+}
+.Ec_add{
+	border:1px solid #2fb791;
+	color:#fff;
+	background: #2FB791;
+	float: left;
+}
+.Ec_cancel{
+	border:1px solid #ff503f;
+	color:#ff503f;
+	float: right;
+}
+
